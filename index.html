@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./css/main.css">
     <title>w-test</title>
 </head>
@@ -24,7 +25,40 @@
                 </div>
             </div>
         </header>
+        <main class="main">
+            <section class="hero">
+                <div class="hero-slider-background-wrapper">
+                    <div class="swiper hero-slider-background">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="hero-slider-banner">
+                                    <img src="./img/slider/slider1-bg.png" class="hero-slider-banner-img" alt="Background Image">
+                                </div>
+                                <div class="container">
+                                    <div class="hero-slider-image">
+                                        <img src="./img/slider/slider1-img.png" alt="Image">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="hero-slider-banner">
+                                    <img src="./img/slider/slider2-bg.png" alt="Background Image">
+                                </div>
+                                <div class="container">
+                                    <div class="hero-slider-image">
+                                        <img src="./img/slider/slider2-img.png" alt="Image">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </main>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="./js/main.js" type="module"></script>
 </body>
 </html>

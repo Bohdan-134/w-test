@@ -19,3 +19,9 @@
   font-weight: 500;
   color: var(--white);
 }
+
+.hero {
+    position: relative;
+    z-index: 1;
+    height: 72rem;
+}
