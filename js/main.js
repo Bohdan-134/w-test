@@ -103,19 +103,6 @@ checkScreenSize();
 
 window.addEventListener("resize", checkScreenSize);
 
-// ------ modal ------ //
-
-/* const buttons = document.querySelectorAll('.btn');
-
-function toggleActiveModalClass() {
-  document.body.classList.toggle('active-modal');
-}
-
-buttons.forEach(button => {
-  button.addEventListener('click', toggleActiveModalClass);
-});
- */
-
 const buttons = document.querySelectorAll('.btn');
 let clickTimeout;
 
@@ -138,6 +125,6 @@ buttons.forEach(button => {
     document.body.classList.add('active-modal');
     clickTimeout = setTimeout(() => {
       document.addEventListener('click', clickOutsideModal);
-    }, 500); // 500 milliseconds (0.5 seconds)
+    }, 500);
   });
 });
