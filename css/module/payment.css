@@ -5,16 +5,28 @@
 
 .payment .container {
     overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-animation: to-top .3s 1s both;
+            animation: to-top .3s 1s both;
 }
 
 .payment .container .payment-img-block {
     position: relative;
-    
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .payment .container .payment-img-block__top {
@@ -23,9 +35,28 @@
 
 .payment .container .payment-img-block .payment-img svg path {
     fill: #b7b2b2;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    opacity: .5;
 }
 
 .payment .container .payment-img-block .payment-img .stroke path {
     fill: none;
     stroke: #b7b2b2;
+    opacity: .5;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+
+.payment .container .payment-img-block .payment-img.active svg path {
+    fill: var(--white);
+    opacity: 1;
+}
+
+.payment .container .payment-img-block .payment-img.active .stroke path {
+    fill: none;
+    stroke: var(--white);
+    opacity: 1;
 }

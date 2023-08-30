@@ -19,3 +19,17 @@ const swiperHero = new Swiper(".hero-slider-background", {
 const swiperInfo = new Swiper(".info-swiper", {
   effect: "fade",
 });
+
+const paymentImages = document.querySelectorAll('.payment-img');
+
+function toggleActiveClass() {
+  const randomIndex = Math.floor(Math.random() * paymentImages.length);
+
+  paymentImages.forEach(image => {
+    image.classList.remove('active');
+  });
+
+  paymentImages[randomIndex].classList.add('active');
+}
+
+setInterval(toggleActiveClass, 2000);

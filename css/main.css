@@ -20,6 +20,8 @@
   background: var(--green-gradient);
   font-weight: 500;
   color: var(--white);
+  -webkit-transition: color 0.3s;
+  -o-transition: color 0.3s;
   transition: color 0.3s;
 }
 
@@ -28,13 +30,19 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, 500%);
+  -webkit-transform: translate(-50%, 500%);
+      -ms-transform: translate(-50%, 500%);
+          transform: translate(-50%, 500%);
   width: 2rem;
   height: 2rem;
   background: url("../../img/user.svg") no-repeat;
   background-size: 100%;
   background-position: center;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  -o-transition: transform 0.3s;
   transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 .btn::after {
@@ -44,10 +52,16 @@
   position: absolute;
   top: 0; left: 0;
   opacity: 0.5;
-  filter: blur;
+  -webkit-filter: blur;
+          filter: blur;
+  background: -webkit-gradient(linear, right top, left top, from(transparent), color-stop(40%, #fff), color-stop(60%, #fff), to(transparent));
+  background: -o-linear-gradient(right, transparent 0%, #fff 40%, #fff 60%, transparent 100%);
   background: linear-gradient(to left, transparent 0%, #fff 40%, #fff 60%, transparent 100%);
-  transform: translate(-100%, -25%) rotate(10deg);
-  animation: blick 2s infinite;
+  -webkit-transform: translate(-100%, -25%) rotate(10deg);
+      -ms-transform: translate(-100%, -25%) rotate(10deg);
+          transform: translate(-100%, -25%) rotate(10deg);
+  -webkit-animation: blick 2s infinite;
+          animation: blick 2s infinite;
 }
 
 .btn:hover {
@@ -55,7 +69,9 @@
 }
 
 .btn:hover::before {
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .btn:hover::after {

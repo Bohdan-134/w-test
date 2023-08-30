@@ -21,6 +21,8 @@
     z-index: 2;
     width: 100%;
     height: 101%;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(41, 59, 43, 0.35)), to(rgba(41, 59, 43, 0.35))), radial-gradient(58.29% 46.00% at 50.00% 54.00%, rgba(41, 59, 43, 0.00) 50.26%, #293B2B 100%);
+    background: -o-linear-gradient(bottom, rgba(41, 59, 43, 0.35) 0%, rgba(41, 59, 43, 0.35) 100%), -o-radial-gradient(50.00% 54.00%, 58.29% 46.00%, rgba(41, 59, 43, 0.00) 50.26%, #293B2B 100%);
     background: linear-gradient(0deg, rgba(41, 59, 43, 0.35) 0%, rgba(41, 59, 43, 0.35) 100%), radial-gradient(58.29% 46.00% at 50.00% 54.00%, rgba(41, 59, 43, 0.00) 50.26%, #293B2B 100%);
 }
 
@@ -32,24 +34,35 @@
 .hero-slider-background .swiper-slide .hero-slider-banner .hero-slider-banner-img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 .hero-slider-background .swiper-slide .container {
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
 }
 
 .hero-slider-background .swiper-slide .container .hero-slider-image {
     position: relative;
     right: -8rem;
     bottom: -20rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     opacity: 0;
+    -webkit-transition: opacity .5s, bottom .5s;
+    -o-transition: opacity .5s, bottom .5s;
     transition: opacity .5s, bottom .5s;
 }
 
