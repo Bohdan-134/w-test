@@ -54,8 +54,8 @@
   opacity: 0.5;
   -webkit-filter: blur;
           filter: blur;
-  background: -webkit-gradient(linear, right top, left top, from(transparent), color-stop(40%, #fff), color-stop(60%, #fff), to(transparent));
   background: -o-linear-gradient(right, transparent 0%, #fff 40%, #fff 60%, transparent 100%);
+  background: -webkit-gradient(linear, right top, left top, from(transparent), color-stop(40%, #fff), color-stop(60%, #fff), to(transparent));
   background: linear-gradient(to left, transparent 0%, #fff 40%, #fff 60%, transparent 100%);
   -webkit-transform: translate(-100%, -25%) rotate(10deg);
       -ms-transform: translate(-100%, -25%) rotate(10deg);
@@ -83,4 +83,30 @@
   position: relative;
   z-index: 1;
   height: 72rem;
+}
+
+.footer {
+  padding-bottom: 5rem;
+  margin-top: 9.2rem;
+}
+
+@media screen and (max-width: 1250px) {
+  .container {
+    padding: 0 4rem;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .container {
+    max-width: 320px;
+    padding: 0;
+  }
+  .hero {
+    padding-top: 4rem;
+    height: 80rem;
+  }
+  .footer {
+    padding-bottom: 3rem;
+    margin-top: 5rem;
+  }
 }

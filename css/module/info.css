@@ -151,3 +151,57 @@
 .info-swiper .swiper-slide .btn::before {
     display: none;
 }
+
+@media screen and (max-width: 1050px) {
+  .info .info-alert-wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .info .info-alert-wrapper .info-alert {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 21.1rem;
+    height: 2.6rem;
+  }
+  .info .info-alert-wrapper .info-alert .info-alert-text-top {
+    font-size: 1rem;
+    margin-right: .2rem;
+  }
+  .info .info-alert-wrapper .info-alert .info-alert-text-bottom {
+    font-size: 1.2rem;
+  }
+  .info .info-title {
+    margin-top: 2.4rem;
+    text-align: center;
+  }
+  .info .info-title .info-title-top {
+    font-size: 2.4rem;
+  }
+  .info .info-title .info-title-top.info-title-top__right {
+    margin-left: 4rem;
+  }
+  .info .info-title .info-title-bottom {
+    font-size: 3.1rem;
+  }
+  .info .info-swiper-wrapper {
+    margin-top: 2.4rem;
+  }
+  .info-swiper .swiper-slide {
+    text-align: center;
+  }
+  .info-swiper .swiper-slide .info-swiper-slide-text {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .info-swiper .swiper-slide .info-swiper-slide-text br {
+    display: none;
+  }
+  .info-swiper .swiper-slide .swiper-slide-btn {
+    padding: .8rem 7.3rem;
+    font-size: 2.2rem;
+  }
+}

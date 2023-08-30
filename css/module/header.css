@@ -6,8 +6,8 @@
   right: 0;
   z-index: 20;
   height: 6rem;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(-37.5%, rgba(22, 26, 22, 0)), color-stop(68%, #161A16));
   background: -o-linear-gradient(bottom, rgba(22, 26, 22, 0) -37.5%, #161A16 68%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(-37.5%, rgba(22, 26, 22, 0)), color-stop(68%, #161A16));
   background: linear-gradient(0deg, rgba(22, 26, 22, 0) -37.5%, #161A16 68%);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -64,4 +64,32 @@
   padding: 0.5rem 2.5rem;
   font-size: 1.6rem;
   border-radius: 40rem;
+}
+
+@media screen and (max-width: 1050px) {
+  .header {
+    height: 4rem;
+  }
+  .logo_wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .logo_wrap svg {
+    width: 7rem;
+  }
+  .accered_btn {
+    display: none;
+  }
+  .user_actions .registration_btn {
+    padding: .4rem 1.6rem;
+    font-size: 1rem;
+  }
+  .user_actions .btn::before {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 }

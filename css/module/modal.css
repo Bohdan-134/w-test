@@ -1,0 +1,46 @@
+body.active-modal {
+    overflow: hidden;
+}
+
+.modal-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 999;
+    background-color: #293b2b79;
+    backdrop-filter: blur(0px);
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+}
+
+body.active-modal .modal-wrapper {
+    visibility: visible;
+    opacity: 1;
+    backdrop-filter: blur(5px);
+}
+
+.modal {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-message {
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    font-style: italic;
+    text-align: center;
+    transform: translateY(2rem);
+    opacity: 0;
+    transition: .5s;
+}
+
+body.active-modal .modal-message {
+    transform: translateX(0);
+    opacity: 1;
+}

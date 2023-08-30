@@ -138,3 +138,33 @@
             transform: translate(-50%, -50%);
     opacity: 1;
 }
+
+@media screen and (max-width: 1050px) {
+  .email-form {
+    padding: .1rem;
+  }
+  .email-form .i-mail {
+    padding: .6rem 1.2rem;
+    height: 3rem;
+    font-size: 1.2rem;
+  }
+  .email-form .i-mail::-webkit-input-placeholder {
+    font-size: 1.2rem;
+  }
+  .email-form .i-mail::-moz-placeholder {
+    font-size: 1.2rem;
+  }
+  .email-form .i-mail:-ms-input-placeholder {
+    font-size: 1.2rem;
+  }
+  .email-form .i-mail::-ms-input-placeholder {
+    font-size: 1.2rem;
+  }
+  .email-form .i-mail::placeholder {
+    font-size: 1.2rem;
+  }
+  .email-form .btn-send-mail {
+    width: 10rem;
+    font-size: 1.2rem;
+  }
+}
