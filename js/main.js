@@ -1,4 +1,4 @@
-const swiper = new Swiper(".hero-slider-background", {
+const swiperHero = new Swiper(".hero-slider-background", {
   spaceBetween: 30,
   effect: "fade",
   pagination: {
@@ -6,6 +6,16 @@ const swiper = new Swiper(".hero-slider-background", {
     clickable: true,
   },
   autoplay: {
-    delay: 10000,
+    delay: 8000,
   },
+  on: {
+    slideChange: function () {
+      swiperInfo.slideTo(this.activeIndex);
+    }
+  }
+});
+
+
+const swiperInfo = new Swiper(".info-swiper", {
+  effect: "fade",
 });

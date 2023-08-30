@@ -1,0 +1,128 @@
+.hero-container {
+  position: relative;
+  z-index: 3;
+}
+
+.info .info-alert-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.info .info-alert-wrapper .info-alert {
+  width: 21.5rem;
+  height: 8.6rem;
+  background-color: var(--white);
+  border-radius: 0 0 2.58rem 2.58rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info .info-alert-wrapper .info-alert .info-alert-text-top {
+  color: var(--green);
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 900;
+}
+
+.info .info-alert-wrapper .info-alert .info-alert-text-bottom {
+  color: var(--green);
+  font-size: 2.8rem;
+  font-style: italic;
+  font-weight: 900;
+}
+
+.info .info-title span {
+    display: block;
+}
+
+.info .info-title .info-title-top {
+  margin-bottom: -0.7rem;
+  color: var(--white);
+  text-shadow: 0.2rem 0.2rem 1.2rem rgba(0, 0, 0, 0.6);
+  font-size: 4.4rem;
+  font-style: italic;
+  font-weight: 900;
+}
+
+.info .info-title .info-title-top.info-title-top__right {
+  margin-left: 8rem;
+}
+
+.info .info-title .info-title-bottom {
+  color: var(--white);
+  text-shadow: 0.2rem 0.2rem 1.2rem rgba(0, 0, 0, 0.6);
+  font-size: 5.7rem;
+  font-style: italic;
+  font-weight: 900;
+}
+
+.info-title-top[data-animation="to-right"] {
+    animation: to-right .5s .2s both;
+}
+
+.info-title-top[data-animation="to-left"] {
+    animation: to-left .5s .4s both;
+}
+
+.info-title-bottom[data-animation="to-right"] {
+    animation: to-right .5s .6s both;
+}
+
+.info .info-swiper-wrapper {
+  margin-top: 6rem;
+  max-width: 43rem;
+}
+
+.info-swiper {
+    padding-bottom: 4rem;
+}
+
+.info-swiper .swiper-slide .info-swiper-slide-text {
+  margin-bottom: 3rem;
+  color: var(--white);
+  text-shadow: 0.2rem 0.2rem 1.2rem rgba(0, 0, 0, 0.6);
+  font-size: 3.2rem;
+  font-weight: 600;
+  line-height: 120%;
+  transform: translateY(3rem);
+  opacity: 0;
+  transition: transform .3s, opacity .3s;
+}
+
+.info-swiper .swiper-slide.swiper-slide-active .info-swiper-slide-text {
+    transform: translateY(0rem);
+    opacity: 1;
+}
+
+.info-swiper .swiper-slide .info-swiper-slide-text span {
+  text-transform: uppercase;
+}
+
+.info-swiper .swiper-slide .swiper-slide-btn {
+  padding: 1.3rem 12rem;
+  border-radius: 10rem;
+  color: var(--white);
+  font-size: 3.6rem;
+  font-weight: 600;
+  line-height: 148.9%;
+  bottom: -3rem;
+  opacity: 0;
+  transition: bottom .3s, opacity .3s, color .3s;
+}
+
+.info-swiper .swiper-slide.swiper-slide-active .swiper-slide-btn {
+    bottom: 0;
+    opacity: 1;
+}
+
+.info-swiper .swiper-slide .btn::before {
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.info-swiper .swiper-slide .btn::before {
+    display: none;
+}
+

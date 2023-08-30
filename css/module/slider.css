@@ -58,16 +58,16 @@
     opacity: 1;
 }
 
-.hero-slider-background .swiper-pagination {
+.hero .swiper-pagination {
     bottom: 2rem;
 }
 
-.hero-slider-background .swiper-pagination .swiper-pagination-bullet {
+.hero .swiper-pagination .swiper-pagination-bullet {
     width: 1rem;
     height: 1rem;
     background: #D9D9D9;
 }
 
-.hero-slider-background .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+.hero .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
     background: var(--green-gradient);
 }
