@@ -1,0 +1,82 @@
+.email {
+  margin-top: 9rem;
+}
+
+.email .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.email .container .logo-wrapper {
+  margin-right: 10rem;
+}
+
+.email-form-wrapper {
+  width: 100%;
+}
+
+.email-form {
+  padding: 0.2rem;
+  background: var(--green-gradient);
+  border-radius: 9.9rem;
+  display: flex;
+  align-items: center;
+}
+
+.email-form .i-mail {
+  padding: 0.7rem 2.4rem;
+  height: 4rem;
+  flex: 1;
+  border-radius: 8.5rem;
+  color: var(--green);
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.email-form .i-mail::placeholder {
+  color: #d9d9d9;
+  font-size: 1.7rem;
+  font-weight: 600;
+  line-height: 147.828%;
+}
+
+.email-form .btn-send-mail {
+    position: relative;
+  width: 18rem;
+  height: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  font-size: 1.7rem;
+  font-weight: 600;
+  line-height: 100%;
+  transition: color .3s;
+}
+
+.email-form .btn-send-mail::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-150%, -50%);
+    overflow: hidden;
+    width: 2rem;
+    height: 2rem;
+    background: url('../../img/Arrow_right.svg') no-repeat;
+    background-position: center;
+    background-size: 100%;
+    opacity: 0;
+    transition: transform .3s, opacity .3s;
+}
+
+.email-form .btn-send-mail:hover {
+    color: transparent;
+}
+
+.email-form .btn-send-mail:hover::before {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
